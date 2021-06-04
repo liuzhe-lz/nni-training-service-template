@@ -1,0 +1,11 @@
+{
+    "name": "local2",
+    "version": "0.0.1",
+    "dependencies": {
+        "child-process-promise": "^2.2.1",
+        "ignore": "^5.1.8",
+        "tree-kill": "^1.2.2",
+        "ts-deferred": "^1.0.4",
+        "ws": "^7.4.6"
+    }
+}

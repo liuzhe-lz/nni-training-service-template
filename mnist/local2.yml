@@ -1,0 +1,30 @@
+debug: true
+
+searchSpace:
+    dropout_rate:
+        _type: uniform
+        _value: [0.5, 0.9]
+    conv_size:
+        _type: choice
+        _value: [2, 3, 5, 7]
+    hidden_size:
+        _type: choice
+        _value: [124, 512, 1024]
+    batch_size:
+        _type: choice
+        _value: [16, 32]
+    learning_rate:
+        _type: choice
+        _value: [0.0001, 0.001, 0.01, 0.1]
+
+tuner:
+    name: TPE
+    classArgs:
+        optimize_mode: maximize
+
+trialConcurrency: 3
+maxTrialNumber: 10
+trialCommand: python mnist.py
+
+trainingService:
+    platform: local2
