@@ -1,8 +1,8 @@
-This is a minimal NNI third-party training service demo, "writtin in" (compiled to) plain JS.
+This is a minimal NNI third-party training service demo, "written in" (compiled to) plain JS.
 
 ```sh
 python setup.py develop --user
-nnictl trainingservice register local2
+nnictl trainingservice register --package local2
 
 cd mnist
 nnictl create --config local2.yml
