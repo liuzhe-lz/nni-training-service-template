@@ -6,5 +6,6 @@ nnictl trainingservice register --package local2
 
 cd mnist
 nnictl create --config local2.yml
+  (or)
 python launch.py
 ```
